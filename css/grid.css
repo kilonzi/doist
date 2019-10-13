@@ -1,3 +1,24 @@
+/* GLOBAL VARIABLES AND DEFINITIONS */
+
+
+/* You can be able to change this to allow customizable grid */
+
+:root {
+    --small-upper-limit: 720px;
+    --medium-upper-limit: 1024px;
+    --red: #dc3545;
+    --white: #fff;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+}
+
+
 /* 1. HTML AND BODY */
 
 html,
@@ -6,7 +27,7 @@ body {
     width: 100%;
     overflow-x: hidden;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 400;
 }
 
@@ -14,8 +35,8 @@ body {
 /* RESETS  */
 
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0.3em;
+    padding: 0.5em;
     box-sizing: border-box;
 }
 
@@ -98,6 +119,22 @@ body {
 .row {
     height: fit-content;
     width: 100%;
+    display: block;
+}
+
+.row:before,
+.row:after {
+    display: table;
+    content: " ";
+}
+
+.row:after {
+    clear: both;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
 }
 
 
@@ -106,108 +143,94 @@ body {
 
 /* 5.1 SMALLER SCREENS */
 
-@media screen and (max-width: 719.999999px) {
+@media screen and (max-width:719.999998px) {
     /* Using small */
     .col-small-1 {
         width: calc((1 / 12) * 100%);
     }
-
     .col-small-2 {
         width: calc(2 / 12 * 100%);
     }
-
     .col-small-3 {
         width: calc(3 / 12 * 100%);
     }
-
     .col-small-4 {
         width: calc(4 / 12 * 100%);
     }
-
     .col-small-5 {
         width: calc((5 / 12) * 100%);
     }
-
     .col-small-6 {
         width: calc(6 / 12 * 100%);
     }
-
     .col-small-7 {
         width: calc(7 / 12 * 100%);
     }
-
     .col-small-8 {
         width: calc(8 / 12 * 100%);
     }
-
     .col-small-9 {
         width: calc(1 / 12 * 100%);
     }
-
     .col-small-10 {
         width: calc(10 / 12 * 100%);
     }
-
     .col-small-11 {
         width: calc(11 / 12 * 100%);
     }
-
     .col-small-12 {
         width: calc(12 / 12 * 100%);
+    }
+    .small-hidden {
+        display: none;
+        visibility: hidden;
     }
 }
 
 
 /* 5.2 MEDIUM SIZE */
 
-@media screen and (min-width: 720px) and (max-width: 1023.9999px) {
+@media screen and (min-width: 720px) and (max-width:1023.9998px) {
     /* Using medium  */
     .col-medium-1 {
         width: calc((1 / 12) * 100%);
     }
-
     .col-medium-2 {
         width: calc(2 / 12 * 100%);
     }
-
     .col-medium-3 {
         width: calc(3 / 12 * 100%);
     }
-
     .col-medium-4 {
         width: calc(4 / 12 * 100%);
     }
-
     .col-medium-5 {
         width: calc((5 / 12) * 100%);
     }
-
     .col-medium-6 {
         width: calc(6 / 12 * 100%);
     }
-
     .col-medium-7 {
         width: calc(7 / 12 * 100%);
     }
-
     .col-medium-8 {
         width: calc(8 / 12 * 100%);
     }
-
     .col-medium-9 {
         width: calc(1 / 12 * 100%);
     }
-
     .col-medium-10 {
         width: calc(10 / 12 * 100%);
     }
-
     .col-medium-11 {
         width: calc(11 / 12 * 100%);
     }
-
     .col-medium-12 {
         width: calc(12 / 12 * 100%);
+    }
+    .medium-hidden {
+        display: none;
+        visibility: hidden;
     }
 }
 
@@ -219,49 +242,43 @@ body {
     .col-large-1 {
         width: calc((1 / 12) * 100%);
     }
-
     .col-large-2 {
         width: calc(2 / 12 * 100%);
     }
-
     .col-large-3 {
         width: calc(3 / 12 * 100%);
     }
-
     .col-large-4 {
         width: calc(4 / 12 * 100%);
     }
-
     .col-large-5 {
         width: calc((5 / 12) * 100%);
     }
-
     .col-large-6 {
         width: calc(6 / 12 * 100%);
     }
-
     .col-large-7 {
         width: calc(7 / 12 * 100%);
     }
-
     .col-large-8 {
         width: calc(8 / 12 * 100%);
     }
-
     .col-large-9 {
         width: calc(1 / 12 * 100%);
     }
-
     .col-large-10 {
         width: calc(10 / 12 * 100%);
     }
-
     .col-large-11 {
         width: calc(11 / 12 * 100%);
     }
-
     .col-large-12 {
         width: calc(12 / 12 * 100%);
+    }
+    /* HIDDEN AND VISIBILITY  */
+    .large-hidden {
+        display: none;
+        visibility: hidden;
     }
 }
 
@@ -319,11 +336,11 @@ body {
 
 /* 6. FONT SIZES */
 
-h1 {
+h5 {
     font-size: 0.8em;
 }
 
-h2 {
+h4 {
     font-size: 1em;
 }
 
@@ -331,11 +348,11 @@ h3 {
     font-size: 1.3em;
 }
 
-h4 {
+h2 {
     font-size: 1.7em;
 }
 
-h5 {
+h1 {
     font-size: 2em;
 }
 
@@ -511,81 +528,81 @@ h5 {
 /* 9.2 PADDINGS TOP */
 
 .pt-0 {
-    padding-top: 0;
+    padding-left: 0;
 }
 
 .pt-1 {
-    padding-top: 0.2em;
+    padding-left: 0.2em;
 }
 
 .pt-2 {
-    padding-top: 0.4em;
+    padding-left: 1.0em;
 }
 
 .pt-3 {
-    padding-top: 0.6em;
+    padding-left: 1.6em;
 }
 
 .pt-4 {
-    padding-top: 0.8em;
+    padding-left: 1.8em;
 }
 
 .pt-5 {
-    padding-top: 1em;
+    padding-left: 2em;
 }
 
 
 /* 9.3 PADDINGS RIGHT */
 
 .pr-0 {
-    padding-right: 0;
+    padding-left: 0;
 }
 
 .pr-1 {
-    padding-right: 0.2em;
+    padding-left: 0.2em;
 }
 
 .pr-2 {
-    padding-right: 0.4em;
+    padding-left: 1.0em;
 }
 
 .pr-3 {
-    padding-right: 0.6em;
+    padding-left: 1.6em;
 }
 
 .pr-4 {
-    padding-right: 0.8em;
+    padding-left: 1.8em;
 }
 
 .pr-5 {
-    padding-right: 1em;
+    padding-left: 2em;
 }
 
 
 /* 9.4 PADDINGS BOTTOM  */
 
 .pb-0 {
-    padding-bottom: 0;
+    padding-left: 0;
 }
 
 .pb-1 {
-    padding-bottom: 0.2em;
+    padding-left: 0.2em;
 }
 
 .pb-2 {
-    padding-bottom: 0.4em;
+    padding-left: 1.0em;
 }
 
 .pb-3 {
-    padding-bottom: 0.6em;
+    padding-left: 1.6em;
 }
 
 .pb-4 {
-    padding-bottom: 0.8em;
+    padding-left: 1.8em;
 }
 
 .pb-5 {
-    padding-bottom: 1em;
+    padding-left: 2em;
 }
 
 
@@ -600,17 +617,46 @@ h5 {
 }
 
 .pl-2 {
-    padding-left: 0.4em;
+    padding-left: 1.0em;
 }
 
 .pl-3 {
-    padding-left: 0.6em;
+    padding-left: 1.6em;
 }
 
 .pl-4 {
-    padding-left: 0.8em;
+    padding-left: 1.8em;
 }
 
 .pl-5 {
-    padding-left: 1em;
+    padding-left: 2em;
+}
+
+
+/* MISCELLANOUS */
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.border {
+    border: 2px solid var(--dark);
+}
+
+.border-top {
+    border: 2px solid var(--dark);
+}
+
+.border-right {
+    border: 2px solid var(--dark);
+}
+
+.border-bottom {
+    border: 2px solid var(--dark);
+}
+
+.border-left {
+    border: 2px solid var(--dark);
 }
