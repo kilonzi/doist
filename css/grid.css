@@ -26,8 +26,8 @@ body {
     height: 100%;
     width: 100%;
     overflow-x: hidden;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-size: 16px;
+    font-family: "Graphik Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: normal;
     font-weight: 400;
 }
 
@@ -49,90 +49,33 @@ body {
 
 /* 2. INCLUDED FONTS */
 
-@font-face {
-    font-weight: 400;
-    font-style: normal;
-    font-family: 'Inter-Loom', sans-serif;
-    src: url('https://cdn.loom.com/assets/fonts/inter/Inter-UI-Regular.woff2') format('woff2');
-}
-
-@font-face {
-    font-weight: 400;
-    font-style: italic;
-    font-family: 'Inter-Loom', sans-serif;
-    src: url('https://cdn.loom.com/assets/fonts/inter/Inter-UI-Italic.woff2') format('woff2');
-}
-
-@font-face {
-    font-weight: 500;
-    font-style: normal;
-    font-family: 'Inter-Loom', sans-serif;
-    src: url('https://cdn.loom.com/assets/fonts/inter/Inter-UI-Medium.woff2') format('woff2');
-}
-
-@font-face {
-    font-weight: 500;
-    font-style: italic;
-    font-family: 'Inter-Loom', sans-serif;
-    src: url('https://cdn.loom.com/assets/fonts/inter/Inter-UI-MediumItalic.woff2') format('woff2');
-}
-
-@font-face {
-    font-weight: 700;
-    font-style: normal;
-    font-family: 'Inter-Loom', sans-serif;
-    src: url('https://cdn.loom.com/assets/fonts/inter/Inter-UI-Bold.woff2') format('woff2');
-}
-
-@font-face {
-    font-weight: 700;
-    font-style: italic;
-    font-family: 'Inter-Loom', sans-serif;
-    src: url('https://cdn.loom.com/assets/fonts/inter/Inter-UI-BoldItalic.woff2') format('woff2');
-}
-
-@font-face {
-    font-weight: 900;
-    font-style: normal;
-    font-family: 'Inter-Loom', sans-serif;
-    src: url('https://cdn.loom.com/assets/fonts/inter/Inter-UI-Black.woff2') format('woff2');
-}
-
-@font-face {
-    font-weight: 900;
-    font-style: italic;
-    font-family: 'Inter-Loom', sans-serif;
-    src: url('https://cdn.loom.com/assets/fonts/inter/Inter-UI-BlackItalic.woff2') format('woff2');
-}
-
 
 /* 3. A FLEXIBLE CONTAINER */
 
 .container-fluid {
-    display: flex;
-    height: fit-content;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 
 /* 4. A GROUP OF COLUMNS */
 
-.row {
-    height: fit-content;
-    width: 100%;
-    display: block;
-}
-
-.row:before,
-.row:after {
+.row::before,
+.row::after {
     display: table;
     content: " ";
 }
 
-.row:after {
+.row::after {
     clear: both;
 }
 
 .row {
+    display: flex;
+    flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
 }
@@ -143,44 +86,63 @@ body {
 
 /* 5.1 SMALLER SCREENS */
 
-@media screen and (max-width:719.999998px) {
+@media screen and (max-width: 719px) {
     /* Using small */
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
     .col-small-1 {
         width: calc((1 / 12) * 100%);
     }
+
     .col-small-2 {
         width: calc(2 / 12 * 100%);
     }
+
     .col-small-3 {
         width: calc(3 / 12 * 100%);
     }
+
     .col-small-4 {
         width: calc(4 / 12 * 100%);
     }
+
     .col-small-5 {
         width: calc((5 / 12) * 100%);
     }
+
     .col-small-6 {
         width: calc(6 / 12 * 100%);
     }
+
     .col-small-7 {
         width: calc(7 / 12 * 100%);
     }
+
     .col-small-8 {
         width: calc(8 / 12 * 100%);
     }
+
     .col-small-9 {
         width: calc(1 / 12 * 100%);
     }
+
     .col-small-10 {
         width: calc(10 / 12 * 100%);
     }
+
     .col-small-11 {
         width: calc(11 / 12 * 100%);
     }
+
     .col-small-12 {
         width: calc(12 / 12 * 100%);
     }
+
     .small-hidden {
         display: none;
         visibility: hidden;
@@ -190,44 +152,63 @@ body {
 
 /* 5.2 MEDIUM SIZE */
 
-@media screen and (min-width: 720px) and (max-width:1023.9998px) {
+@media screen and (min-width: 720px) {
     /* Using medium  */
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
     .col-medium-1 {
         width: calc((1 / 12) * 100%);
     }
+
     .col-medium-2 {
         width: calc(2 / 12 * 100%);
     }
+
     .col-medium-3 {
         width: calc(3 / 12 * 100%);
     }
+
     .col-medium-4 {
         width: calc(4 / 12 * 100%);
     }
+
     .col-medium-5 {
         width: calc((5 / 12) * 100%);
     }
+
     .col-medium-6 {
         width: calc(6 / 12 * 100%);
     }
+
     .col-medium-7 {
         width: calc(7 / 12 * 100%);
     }
+
     .col-medium-8 {
         width: calc(8 / 12 * 100%);
     }
+
     .col-medium-9 {
         width: calc(1 / 12 * 100%);
     }
+
     .col-medium-10 {
         width: calc(10 / 12 * 100%);
     }
+
     .col-medium-11 {
         width: calc(11 / 12 * 100%);
     }
+
     .col-medium-12 {
         width: calc(12 / 12 * 100%);
     }
+
     .medium-hidden {
         display: none;
         visibility: hidden;
@@ -239,42 +220,61 @@ body {
 
 @media screen and (min-width: 1024px) {
     /* Using large  */
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
     .col-large-1 {
         width: calc((1 / 12) * 100%);
     }
+
     .col-large-2 {
         width: calc(2 / 12 * 100%);
     }
+
     .col-large-3 {
         width: calc(3 / 12 * 100%);
     }
+
     .col-large-4 {
         width: calc(4 / 12 * 100%);
     }
+
     .col-large-5 {
         width: calc((5 / 12) * 100%);
     }
+
     .col-large-6 {
         width: calc(6 / 12 * 100%);
     }
+
     .col-large-7 {
         width: calc(7 / 12 * 100%);
     }
+
     .col-large-8 {
         width: calc(8 / 12 * 100%);
     }
+
     .col-large-9 {
         width: calc(1 / 12 * 100%);
     }
+
     .col-large-10 {
         width: calc(10 / 12 * 100%);
     }
+
     .col-large-11 {
         width: calc(11 / 12 * 100%);
     }
+
     .col-large-12 {
         width: calc(12 / 12 * 100%);
     }
+
     /* HIDDEN AND VISIBILITY  */
     .large-hidden {
         display: none;
@@ -536,7 +536,7 @@ h1 {
 }
 
 .pt-2 {
-    padding-left: 1.0em;
+    padding-left: 1em;
 }
 
 .pt-3 {
@@ -563,7 +563,7 @@ h1 {
 }
 
 .pr-2 {
-    padding-left: 1.0em;
+    padding-left: 1em;
 }
 
 .pr-3 {
@@ -590,7 +590,7 @@ h1 {
 }
 
 .pb-2 {
-    padding-left: 1.0em;
+    padding-left: 1em;
 }
 
 .pb-3 {
@@ -617,7 +617,7 @@ h1 {
 }
 
 .pl-2 {
-    padding-left: 1.0em;
+    padding-left: 1em;
 }
 
 .pl-3 {
