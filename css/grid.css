@@ -35,8 +35,8 @@ body {
 /* RESETS  */
 
 * {
-    margin: 0.3em;
-    padding: 0.5em;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -54,10 +54,8 @@ body {
 
 .container-fluid {
     width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+    margin-right: 0;
+    margin-left: 0;
 }
 
 
@@ -370,23 +368,23 @@ h1 {
 }
 
 .m-1 {
-    margin: 0.2em;
+    margin: 1.2em;
 }
 
 .m-2 {
-    margin: 0.4em;
+    margin: 1.4em;
 }
 
 .m-3 {
-    margin: 0.6em;
+    margin: 1.6em;
 }
 
 .m-4 {
-    margin: 0.8em;
+    margin: 1.8em;
 }
 
 .m-5 {
-    margin: 1em;
+    margin: 2em;
 }
 
 
@@ -397,23 +395,23 @@ h1 {
 }
 
 .mt-1 {
-    margin-top: 0.2em;
+    margin-top: 1.2em;
 }
 
 .mt-2 {
-    margin-top: 0.4em;
+    margin-top: 1.4em;
 }
 
 .mt-3 {
-    margin-top: 0.6em;
+    margin-top: 1.6em;
 }
 
 .mt-4 {
-    margin-top: 0.8em;
+    margin-top: 1.8em;
 }
 
 .mt-5 {
-    margin-top: 1em;
+    margin-top: 2em;
 }
 
 
@@ -424,23 +422,23 @@ h1 {
 }
 
 .mr-1 {
-    margin-right: 0.2em;
+    margin-right: 1.2em;
 }
 
 .mr-2 {
-    margin-right: 0.4em;
+    margin-right: 1.4em;
 }
 
 .mr-3 {
-    margin-right: 0.6em;
+    margin-right: 1.6em;
 }
 
 .mr-4 {
-    margin-right: 0.8em;
+    margin-right: 1.8em;
 }
 
 .mr-5 {
-    margin-right: 1em;
+    margin-right: 2em;
 }
 
 
@@ -451,23 +449,23 @@ h1 {
 }
 
 .mb-1 {
-    margin-bottom: 0.2em;
+    margin-bottom: 1.2em;
 }
 
 .mb-2 {
-    margin-bottom: 0.4em;
+    margin-bottom: 1.4em;
 }
 
 .mb-3 {
-    margin-bottom: 0.6em;
+    margin-bottom: 1.6em;
 }
 
 .mb-4 {
-    margin-bottom: 0.8em;
+    margin-bottom: 1.8em;
 }
 
 .mb-5 {
-    margin-bottom: 1em;
+    margin-bottom: 2;
 }
 
 
@@ -478,23 +476,23 @@ h1 {
 }
 
 .ml-1 {
-    margin-left: 0.2em;
+    margin-left: 1.2em;
 }
 
 .ml-2 {
-    margin-left: 0.4em;
+    margin-left: 1.4em;
 }
 
 .ml-3 {
-    margin-left: 0.6em;
+    margin-left: 1.6em;
 }
 
 .ml-4 {
-    margin-left: 0.8em;
+    margin-left: 1.8em;
 }
 
 .ml-5 {
-    margin-left: 1em;
+    margin-left: 2em;
 }
 
 
@@ -505,23 +503,23 @@ h1 {
 }
 
 .p-1 {
-    padding: 0.2em;
+    padding: 1.2em;
 }
 
 .p-2 {
-    padding: 0.4em;
+    padding: 1.4em;
 }
 
 .p-3 {
-    padding: 0.6em;
+    padding: 1.6em;
 }
 
 .p-4 {
-    padding: 0.8em;
+    padding: 1.8em;
 }
 
 .p-5 {
-    padding: 1em;
+    padding: 2em;
 }
 
 

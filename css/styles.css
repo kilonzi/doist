@@ -7,10 +7,6 @@ body {
     margin: 0;
 }
 
-.horizontal-list {
-    background-color: chocolate;
-}
-
 .banner {
     background-image: url(../img/home-banner@2x.png);
     background-position: center bottom;
@@ -21,8 +17,7 @@ body {
 
 .banner-head {
     position: relative;
-    top: 10rem;
-    display: inline-block;
+    top: 40%;
 }
 
 a {
@@ -34,7 +29,7 @@ nav {
     background-color: white;
     justify-content: space-between;
     align-items: center;
-    padding: 0.6em 0.5em;
+    padding: 1rem 0.5rem;
     border-bottom: 1px solid #e1e1e1;
     -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.08);
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.08);
@@ -50,6 +45,8 @@ nav {
 
 .nav-links li {
     padding: 0 1em;
+    font-size: 0.9rem;
+    font-weight: 400;
 }
 
 .nav-links:hover {
@@ -96,7 +93,9 @@ footer {
 }
 
 .footer-links>li {
-    padding-left: 1.6em;
+    padding: 0 2em;
+    font-size: 0.9rem;
+    font-weight: 400;
 }
 
 .social-links {
@@ -109,13 +108,9 @@ footer {
 
 p {
     font-weight: 200;
-    padding-top: 0.3em 0.1rem;
+    margin-top: 0.3em 0.1rem;
     color: gray;
-    font-size: 0.9rem;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0;
-    margin-inline-end: 0;
+    font-size: 1rem;
     width: 100%;
 }
 
@@ -126,4 +121,26 @@ div {
 
 article {
     margin: 0.5em 0;
+}
+
+.motto {
+    font-size: 2rem;
+    letter-spacing: -1px;
+    line-height: 1.3125;
+}
+
+.work {
+    color: #616161;
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.55555556;
+}
+
+.banner-info {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 61.25rem;
+    padding: 0 1rem;
 }
