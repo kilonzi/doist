@@ -26,6 +26,15 @@ body {
     margin-left: 2rem;
 }
 
+p {
+    font-weight: 200;
+    margin-top: 0.3em 0.1rem;
+    color: gray;
+    font-size: 1rem;
+    width: 100%;
+    padding: 0.5rem 0;
+}
+
 .banner-head>p {
     font-size: 1.4rem;
     margin-left: 2rem;
@@ -128,15 +137,6 @@ footer {
     padding-left: 1em;
 }
 
-p {
-    font-weight: 200;
-    margin-top: 0.3em 0.1rem;
-    color: gray;
-    font-size: 1rem;
-    width: 100%;
-    padding: 0.5rem 0;
-}
-
 div {
     line-height: 0.5rem;
     width: 100%;
@@ -148,7 +148,7 @@ article {
 
 .upper-width {
     max-width: 33rem;
-    clear: both
+    clear: both;
 }
 
 .center {
