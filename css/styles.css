@@ -8,20 +8,44 @@ body {
 }
 
 .banner {
-    background-image: url(../img/home-banner@2x.png);
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    padding-bottom: 75vw;
+    display: block;
+    margin-bottom: 0;
 }
 
 .banner-head {
     position: relative;
-    top: 40%;
+    top: 6%;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    line-height: 1.3125;
+    display: block;
+}
+
+.banner-head>h1 {
+    font-size: 3rem;
+    margin-left: 2rem;
+}
+
+.banner-head>p {
+    font-size: 1.4rem;
+    margin-left: 2rem;
+}
+
+.banner-image {
+    background-position: right 1rem bottom;
+    background-size: 80%;
+    padding-top: 2.5rem;
+    padding-bottom: 25.625rem;
+    background-image: url(../img/home-banner@2x.png);
+    background-repeat: no-repeat;
 }
 
 a {
     text-decoration: none;
+}
+
+a:visited {
+    color: #616161;
 }
 
 nav {
@@ -75,9 +99,7 @@ nav {
 footer {
     background-color: #f7f7f7;
     display: block;
-    max-height: 5rem;
-    min-height: 2rem;
-    height: 100%;
+    padding: 1.3rem;
     width: 100%;
 }
 
@@ -85,16 +107,16 @@ footer {
     display: flex;
     justify-content: space-between;
     padding: 0.8rem 0;
-    border-bottom: 1.5px solid #e1e1e1;
 }
 
 .footer-links {
     display: flex;
+    justify-content: start;
 }
 
 .footer-links>li {
     padding: 0 2em;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: 400;
 }
 
@@ -112,6 +134,7 @@ p {
     color: gray;
     font-size: 1rem;
     width: 100%;
+    padding: 0.5rem 0;
 }
 
 div {
@@ -123,24 +146,18 @@ article {
     margin: 0.5em 0;
 }
 
-.motto {
-    font-size: 2rem;
-    letter-spacing: -1px;
-    line-height: 1.3125;
+.upper-width {
+    max-width: 33rem;
+    clear: both
 }
 
-.work {
-    color: #616161;
-    font-size: 1.125rem;
-    font-weight: 400;
-    line-height: 1.55555556;
+.center {
+    justify-content: center;
+    margin: 5rem auto;
+    width: 42rem;
+    text-align: center;
 }
 
-.banner-info {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 61.25rem;
-    padding: 0 1rem;
+#red-link {
+    color: red;
 }
