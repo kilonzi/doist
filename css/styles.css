@@ -12,6 +12,11 @@ body {
     margin-bottom: 0;
 }
 
+*,
+div.doist-values {
+    line-height: 1.3125;
+}
+
 .banner-head {
     position: relative;
     top: 6%;
