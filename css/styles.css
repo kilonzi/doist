@@ -21,7 +21,7 @@ body {
     display: block;
 }
 
-.banner-head>h1 {
+.banner-head>h2 {
     font-size: 3rem;
     margin-left: 2rem;
 }
@@ -158,6 +158,8 @@ article {
     text-align: center;
 }
 
-#red-link {
+#red-link-a,
+#red-link-b,
+#red-link-c {
     color: red;
 }
